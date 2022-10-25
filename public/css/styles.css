@@ -172,6 +172,8 @@ article div.main-article{
 
 .flex-container {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .price{
@@ -179,7 +181,7 @@ article div.main-article{
 }
 
 .discount {
-    width: 30%;
+    width: 70%;
 }
 
 .products{
@@ -222,6 +224,36 @@ article div.main-article{
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.radio {
+    display: flex;
+    flex-direction: row; 
+}
+
+.radio div{
+    height: 35px;
+    padding: 4px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column; 
+}
+
+.checkbox div{
+    height: 35px;
+    padding: 4px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 
 @media (min-width: 425px){
 
