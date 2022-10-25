@@ -195,6 +195,40 @@ article div.main-article{
     align-items: center;
 }
 
+/*FOOTER*/
+
+footer{
+    background-color: #fff;
+    color: #666;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.footer-text p {
+    text-align: center;
+}
+
+.footer-icon {
+    color: #0044AA;
+    font-size: 25px;
+}
+
+.copyright-text {
+    text-align: center;
+    margin: 15px;
+}
+
 /*REGISTRO*/
 
 .registro{
@@ -247,13 +281,59 @@ article div.main-article{
 .checkbox div{
     height: 35px;
     padding: 4px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+#userphoto{
+    height: 35px;
+    padding: 4px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
 
+.terminos{
+    height: 35px;
+    padding: 4px;
+    margin: 10px;
+}
+
+.cuenta-creada{
+    margin: 10px;
+}
+
+/*LOGIN*/
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.form-login{
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls{
+    background-color: #FFF;
+    border: none;
+    color: #666;
+    padding: 4px;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
 @media (min-width: 425px){
 
@@ -337,6 +417,16 @@ article div.main-article{
     .products article{
         width: 45%;
     }
+
+    /*REGISTRO*/
+
+    .form-register{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 769px){
@@ -370,5 +460,15 @@ article div.main-article{
 
     .products article{
         width: 23%;
+    }
+
+    /*REGISTRO*/ 
+
+    .form-register{
+        width: 35%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
