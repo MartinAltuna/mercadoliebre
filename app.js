@@ -4,10 +4,10 @@ app.use(express.static('public'));
 const path = require('path');
 const PUBLICFOLDER = path.resolve('public')
 app.use(express.static(PUBLICFOLDER))
+const port = process.env.PORT || 3001
 
-
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando en el servidor 3000');
+app.listen(port, ()=>{
+    console.log(`Servidor funcionando en el servidor ${port}`);
 });
 
 app.get('/', (req,res)=>{

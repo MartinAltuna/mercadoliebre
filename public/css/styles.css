@@ -155,9 +155,14 @@ height: 30px;
 border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
-position: relative;
-left: 90%;
-top: -30px;
+position: absolute;
+left: 85%;
+top: -15px;
+transition: all 300ms;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
 }
 
 main section h3{
@@ -170,6 +175,7 @@ article div.main-article{
     padding: 15px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .flex-container {
@@ -202,7 +208,7 @@ article div.main-article{
 footer{
     background-color: #fff;
     color: #666;
-    width: 90vw;
+    width: 100vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -214,7 +220,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .footer-text p {
@@ -224,6 +230,11 @@ footer{
 .footer-icon {
     color: #0044AA;
     font-size: 25px;
+    transition: all 300ms;
+}
+
+.footer-icon:hover {
+    color: #0022AA;
 }
 
 .copyright-text {
@@ -336,6 +347,20 @@ footer{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.button {
+    background-color: #0044AA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.button:hover{
+    background-color: #0022AA;
 }
 
 @media (min-width: 425px){
