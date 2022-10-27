@@ -155,9 +155,9 @@ height: 30px;
 border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
-position: absolute;
-right: 20px;
-top: -15px;
+position: relative;
+left: 90%;
+top: -30px;
 }
 
 main section h3{
@@ -168,6 +168,8 @@ article div.main-article{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-container {
@@ -227,6 +229,7 @@ footer{
 .copyright-text {
     text-align: center;
     margin: 15px;
+    margin: 30px;
 }
 
 /*REGISTRO*/
@@ -426,6 +429,14 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    /*FOOTER*/
+
+    .carteles-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
